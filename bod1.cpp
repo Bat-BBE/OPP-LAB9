@@ -177,7 +177,8 @@ public:
     vector<JobDescription *> jds;
     Division d;
 
-    Employee(string n, string num, int a, string id, string t, date d, Division dd, JobDescription *jd) : Person(n, num, a), companyID(id), title(t), startDate(d), d(dd), sp(nullptr)
+    Employee(string n, string num, int a, string id, string t, date d, Division dd, JobDescription *jd) : 
+    Person(n, num, a), companyID(id), title(t), startDate(d), d(dd), sp(nullptr)
     {
         jds.push_back(jd);
     }
